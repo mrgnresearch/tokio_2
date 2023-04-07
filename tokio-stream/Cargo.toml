@@ -28,11 +28,11 @@ signal = ["tokio/signal"]
 [dependencies]
 futures-core = { version = "0.3.0" }
 pin-project-lite = "0.2.0"
-tokio = { version = "1.8.0", path = "../tokio", features = ["sync"] }
+tokio = { version = "2.8.0", path = "../tokio", features = ["sync"] }
 tokio-util = { version = "0.7.0", path = "../tokio-util", optional = true }
 
 [dev-dependencies]
-tokio = { version = "1.2.0", path = "../tokio", features = ["full", "test-util"] }
+tokio = { version = "2.2.0", path = "../tokio", features = ["full", "test-util"] }
 async-stream = "0.3"
 parking_lot = "0.12.0"
 tokio-test = { path = "../tokio-test" }
